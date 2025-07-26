@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Kontak extends Model
+{
+    use HasFactory;
+
+    protected $table = 'kontak'; // pakai singular
+
+    protected $fillable = [
+        'nama',
+        'email',
+        'lokasi',
+        'whatsapp',
+        'link_facebook',    
+        'link_instagram',
+        'link_youtube',
+    ];
+}
